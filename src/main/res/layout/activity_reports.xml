@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uma.astropandith.Activitys.ReportsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pending_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/button_press"
+            style="@style/SwitchTheme"
+            android:textColor="@color/white"
+            android:onClick="pendingBT"
+            android:text="Pending"/>
+
+        <Button
+            android:id="@+id/complete_bt"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_press"
+            android:layout_marginEnd="3dp"
+            style="@style/SwitchTheme"
+            android:textColor="@color/white"
+            android:onClick="CompletedBT"
+            android:text="Completed"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/report_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:text="Pending Reports"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pendingreport_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/completedreport_rv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

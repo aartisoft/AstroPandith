@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/date_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/lato_regular"
+        android:background="#D3E8FFE8"
+        android:textColor="@color/black"
+        android:text="Date"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Name "/>
+
+        <TextView
+            android:id="@+id/Order_Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:text="TYYRY878768"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Closing Balance"
+            android:gravity="end"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Status "/>
+
+        <TextView
+            android:id="@+id/satus_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:text="Failed"/>
+
+
+        <TextView
+            android:id="@+id/closing_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="5dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Amount "/>
+
+        <TextView
+            android:id="@+id/amount_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:text="100"/>
+
+        <TextView
+            android:id="@+id/time_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20sp"
+            android:fontFamily="@font/lato_bold"
+            android:text="12-12-2019"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Service Type "/>
+
+        <TextView
+            android:id="@+id/service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:text="100"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Comment "/>
+
+        <TextView
+            android:id="@+id/Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato_bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

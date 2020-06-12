@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="com.uma.astropandith.Activitys.ShowMsgActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/primary"
+        android:text="Ended The Chat"/>
+
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/primary"
+        android:text="Ended The Chat"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToHome"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_press"
+        android:text="Go to home page"/>
+
+
+</LinearLayout>

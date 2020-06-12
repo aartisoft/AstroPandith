@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_back"
+    tools:context=".Activitys.WebviewChatActivity">
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="50dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MenuStyle">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_person_outline_white_24dp"
+                android:id="@+id/profile_image"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:textSize="18sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="endChat"
+                android:fontFamily="@font/lato_regular"
+                android:text="End Chat"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/time_show"
+            android:layout_alignTop="@+id/recycler_view"
+            android:gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:text="Please wait"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_view"
+        android:layout_below="@id/bar_layout" />
+
+
+
+
+
+</RelativeLayout>

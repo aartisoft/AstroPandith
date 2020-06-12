@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:padding="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:background="@drawable/customer_status"
+            android:id="@+id/customer_status"
+            android:padding="7dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text=""/>
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="13sp"
+                android:text="NAME"/>
+
+            <TextView
+                android:id="@+id/name_call_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/lato_bold"
+                android:text="NAMAE"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="13sp"
+                android:text="Call Status"/>
+
+
+            <TextView
+                android:id="@+id/secns_call_state_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Status"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="13sp"
+
+                android:text="Duration"/>
+
+
+            <TextView
+                android:id="@+id/secns_call_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:text="16 sec"/>
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/grey"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:textSize="13sp"
+                android:text="Date And Time"/>
+
+            <TextView
+                android:id="@+id/date_time_call_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:text="Date And Time"/>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/grey"/>
+
+
+            <TextView
+                android:id="@+id/feedCT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:visibility="gone"
+                android:textSize="13sp"
+                android:text="Feedback"/>
+
+
+            <TextView
+                android:id="@+id/feedback_call_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato_regular"
+                android:text="Date And Time"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="5dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_call_black_24dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                android:text="Credit"/>
+
+
+
+            <TextView
+                android:id="@+id/amount_call_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/black"
+                android:text="Amount"/>
+
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:id="@+id/feedbackCall"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="14sp"
+                android:text="FEEDBACK"/>
+
+
+            <RatingBar
+                android:id="@+id/ratingbarcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:rating="4"/>
+
+            <LinearLayout
+                android:id="@+id/LL_Coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/couponTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Coupon Applied"/>
+
+                <TextView
+                    android:id="@+id/couponCOETV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Coupon Code"
+                    android:textColor="@color/green" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendCallSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_press"
+        android:textColor="@color/white"
+        android:layout_margin="4dp"
+        android:text="Send SMS"/>
+    
+    <TextView
+        android:id="@+id/smsSENT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        android:fontFamily="@font/lato_bold"
+        android:text="SMS Sent To Customer"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

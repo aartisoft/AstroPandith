@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#77E9E9E9"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.uma.astropandith.Activitys.UpdatephoneActivity">
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/update_icon"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+
+
+
+  <TextView
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/colorPrimaryDark"
+      android:fontFamily="@font/lato_regular"
+      android:layout_marginStart="5dp"
+      android:text="Primary Phone Number"/>
+
+
+
+
+        <EditText
+            android:id="@+id/primary_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="#1A1A1A"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Enter mobile number"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lato_regular"
+        android:layout_marginStart="5dp"
+        android:text="New Phone Number"/>
+
+
+
+        <EditText
+            android:id="@+id/new_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:inputType="number"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Enter mobile number"/>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/number_update"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shapesignup"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/white"
+        android:text="Update"/>
+
+</LinearLayout>

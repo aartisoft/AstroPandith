@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#77E9E9E9"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.uma.astropandith.Activitys.EduActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardPreventCornerOverlap="true"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Kyc is verified instantly for 90 % of users. Upload certificates is mandatory"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:text="Certificate One"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/certificate_first"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:onClick="selectCertificate"
+                android:layout_gravity="center"
+                android:src="@drawable/certificate_icon"/>
+
+
+            <ImageView
+                android:id="@+id/verify_certificate1"
+                android:layout_alignBottom="@id/certificate_first"
+                android:layout_alignEnd="@id/certificate_first"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@drawable/green_rightmark"/>
+
+        </RelativeLayout>
+
+
+
+
+            <EditText android:id="@+id/certificatename"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:hint="Certificate Name" />
+
+
+
+
+    </LinearLayout>
+
+        <Button
+
+            android:id="@+id/Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/lato_regular"
+            android:background="@drawable/shapesignup"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/ic_file_upload_black_24dp"
+            android:text="UPLOAD"/>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:text="Certificate Two"/>
+
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/certificate_first2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="selectCertificate1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/certificate_icon"/>
+
+
+                <ImageView
+                    android:id="@+id/verify_certificate2"
+                    android:layout_alignBottom="@id/certificate_first2"
+                    android:layout_alignEnd="@id/certificate_first2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:src="@drawable/red_cross_mark"/>
+
+            </RelativeLayout>
+
+            <EditText android:id="@+id/certificatename2"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:fontFamily="@font/lato_regular"
+                android:hint="Certificate Name" />
+
+
+
+    </LinearLayout>
+
+        <Button
+
+            android:id="@+id/Upload2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/lato_regular"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/shapesignup"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_file_upload_black_24dp"
+            android:text="UPLOAD"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:text="Certificate Three"/>
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/certificate_first3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="selectCertificate3"
+                    android:layout_gravity="center"
+                    android:src="@drawable/certificate_icon"/>
+
+
+                <ImageView
+                    android:layout_alignBottom="@id/certificate_first3"
+                    android:layout_alignEnd="@id/certificate_first3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/verify_certificate3"
+                    android:src="@drawable/green_rightmark"/>
+
+            </RelativeLayout>
+
+
+          <EditText android:id="@+id/certificatename3"
+              android:layout_width="match_parent"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content"
+              android:inputType="textPersonName"
+              android:fontFamily="@font/lato_regular"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:hint="Certificate Name" />
+
+
+    </LinearLayout>
+
+        <Button
+
+            android:id="@+id/Upload3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:fontFamily="@font/lato_regular"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/shapesignup"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_file_upload_black_24dp"
+            android:text="UPLOAD"/>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

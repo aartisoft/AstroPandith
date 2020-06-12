@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activitys.ClarificationActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#141414"
+            android:text="CUSTOMER DETAILS"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:id="@+id/show"
+            android:onClick="showdHide"
+            android:background="@drawable/button_press"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/white"
+            android:text="Show More Details"/>
+
+
+        <TextView
+            android:id="@+id/hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:onClick="Hide"
+            android:background="@drawable/button_press"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/white"
+            android:text="Hide Details"/>
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/cusDetails"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ReportType "
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp" />
+
+                    <TextView
+                        android:id="@+id/reportType_TVPD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#141414"
+                        android:text="ReportType"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp" />
+
+
+                    <TextView android:id="@+id/input_namePD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#141414"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="Name" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Phone No."/>
+
+
+                    <TextView android:id="@+id/input_mobilePD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:textColor="#141414"
+                        android:text="Mobile Number" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:visibility="gone"
+                        android:background="@color/colorPrimary"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_marginTop="4dp"
+                        android:text="Gender "/>
+
+
+                    <TextView
+                        android:id="@+id/genderPD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="18sp"
+                        android:textColor="#141414"
+                        android:text="Male "/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Date of Birth"/>
+
+
+                    <TextView android:id="@+id/input_dobPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#141414"
+                        android:text="Date of Birth" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Time of Birth"/>
+
+
+                    <TextView android:id="@+id/input_timedobPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="18sp"
+                        android:textColor="#141414"
+                        android:text="Time of Birth" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Place of Birth"/>
+
+
+
+
+                    <TextView android:id="@+id/input_placedobPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#141414"
+                        android:text="Enter City" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Sate"/>
+
+                    <TextView android:id="@+id/input_statedobPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="18sp"
+                        android:textColor="#141414"
+                        android:text="Enter State/Province" />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Country"/>
+
+
+                    <TextView android:id="@+id/input_countryedobPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#141414"
+                        android:text="Enter Country" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_marginTop="5dp"
+                        android:text="Marital Status"/>
+
+
+                    <TextView
+                        android:id="@+id/marriage_StatusPD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#141414"
+                        android:text="Marital Status"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Occupation"/>
+
+                    <TextView
+                        android:id="@+id/input_occupationPD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textSize="18sp"
+                        android:textColor="#141414"
+                        android:text="Occupation"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Topic of Concern"/>
+
+
+                    <TextView
+                        android:id="@+id/topicOfConcrenPD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#141414"
+                        android:text="Topic of Concern"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/colorPrimary"/>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/parnerdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:hint="Partner's Details" />
+
+
+                        <TextView android:id="@+id/input_pnamePD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textColor="#141414"
+                            android:hint="Partner's Name" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:text="Partner Date of Birth"/>
+
+
+                        <TextView android:id="@+id/input_partnerdobPD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textColor="#141414"
+                            android:text="Enter Partner's Date of Birth" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/colorPrimary"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text="Partner's Time of Birth"/>
+
+
+                        <TextView android:id="@+id/input_partnertimedobPD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textColor="#141414"
+                            android:text="Enter Partner's Time of Birth" />
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/colorPrimary"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/lato_regular"
+                            android:text=" Partner's Place of Birth"/>
+
+
+                        <TextView android:id="@+id/input_parnerplacedobPD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textColor="#141414"
+                            android:text="Enter City" />
+
+
+
+
+
+                        <TextView android:id="@+id/input_partnerstatedobPD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textColor="#141414"
+                            android:text="Enter State/Province" />
+
+
+
+                        <TextView android:id="@+id/input_partnercountryedobPD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/lato_bold"
+                            android:textSize="18sp"
+                            android:textColor="#141414"
+                            android:text="Enter Country" />
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/colorPrimary"/>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Any Comments"/>
+
+
+                    <TextView android:id="@+id/input_anyCommentsPD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:padding="15dp"
+                        android:background="@drawable/sahpe_back"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Enter Your Comments Here" />
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="REPORT"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/report_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="#141414" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/claTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="CLARIFICATION Q?"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/clarificationQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/lato_regular"
+                    android:padding="5dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="CLARIFICATION ANSWER"/>
+            <EditText
+                android:id="@+id/feedback_textC"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sahpe_back"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/black"
+                android:hint="WRITE CLARIFICATION ANSWER"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:padding="5dp" />
+
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/submit_clarification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="#fff"
+                android:text="Submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

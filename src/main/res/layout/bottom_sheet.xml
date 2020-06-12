@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/MainParentRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!--        &lt;!&ndash; This layout is the Collapsed layout &ndash;&gt;-->
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/Layout_Collapsed"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="vertical"-->
+        <!--            android:visibility="gone">-->
+
+        <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                android:id="@+id/Logo_Icon"-->
+        <!--                android:layout_width="72dp"-->
+        <!--                android:layout_height="72dp"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:src="@drawable/astro_icon" />-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/Widget_Close_Icon"-->
+        <!--                android:layout_width="23dp"-->
+        <!--                android:layout_height="23dp"-->
+        <!--                android:visibility="gone"-->
+        <!--                android:layout_marginLeft="50dp"-->
+        <!--                android:src="@drawable/close_icon" />-->
+        <!--        </RelativeLayout>-->
+
+        <!-- This layout is expended layout-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:elevation="7dp">
+        <LinearLayout
+            android:id="@+id/Layout_Expended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/ic_chat_black_24dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/lato_bold"
+                        android:gravity="center"
+                        android:text="Request For Chat"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/name_u"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Name"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:background="#DD0D0D"
+                        android:text="Reject"/>
+
+
+                    <Button
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/accept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:background="@color/green"
+                        android:text="Accept"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prBar"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:tooltipText="Please Wait"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Please Wait "/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

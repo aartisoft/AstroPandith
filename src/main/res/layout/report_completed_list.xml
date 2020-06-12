@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/completedLT"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_completedreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Prasheel Sinsh"/>
+
+        <TextView
+            android:id="@+id/report_completedprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            android:text="126.00"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1A1A"
+            android:fontFamily="@font/lato_regular"
+            android:text="Status "/>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="#CF3024"
+            android:text="COMPLETED"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="Report Type  "/>
+
+        <TextView
+            android:id="@+id/report_Completedreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Next 3 Months Complete Report"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1A1A1A"
+            android:fontFamily="@font/lato_regular"
+            android:text="Comment  "/>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="English"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:id="@+id/feedTit"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1A1A1A"
+                android:fontFamily="@font/lato_regular"
+                android:text="FeedBack  "/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_Coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/couponTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:fontFamily="@font/lato_bold"
+                android:text="Coupon Applied"/>
+
+            <TextView
+                android:id="@+id/couponCODETV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:text="Coupon Code"
+                android:textColor="@color/green" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/feedback_completedcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:isIndicator="true" />
+
+
+        <TextView
+            android:id="@+id/clarification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_bold"
+            android:background="@drawable/button_press"
+            android:text="CLARIFICATION"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/editReply"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white"
+            android:text="Edit"/>
+
+
+
+        <TextView
+            android:id="@+id/report_Completedtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="20 Sep 19, 11;25 AM"/>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

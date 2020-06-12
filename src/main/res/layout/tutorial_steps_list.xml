@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/steps_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="Steps "/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 1"/>
+
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 2"/>
+
+    <TextView
+        android:id="@+id/steps1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 3"/>
+
+    <TextView
+        android:id="@+id/steps2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 4"/>
+
+    <TextView
+        android:id="@+id/steps3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 5"/>
+
+    <TextView
+        android:id="@+id/steps4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 6"/>
+
+    <TextView
+        android:id="@+id/steps5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 7"/>
+
+    <TextView
+        android:id="@+id/steps6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 8"/>
+
+    <TextView
+        android:id="@+id/steps7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="Step 9"/>
+
+    <TextView
+        android:id="@+id/steps8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:background="@drawable/sahpe_back"
+        android:layout_marginTop="3dp"
+        android:textColor="#141414"
+        android:text="steps"/>
+
+</LinearLayout>

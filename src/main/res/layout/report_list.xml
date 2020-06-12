@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/pending_list"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name_pendingreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Prasheel Sinsh"/>
+
+        <TextView
+            android:id="@+id/report_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textColor="#1A1A1A"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="16sp"
+            android:text="126.00"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Status  "/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textColor="#CF3024"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="PENDING"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginStart="5dp"
+            android:text="Report Type  "/>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/report_pendingreport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Next 3 Months Complete Report"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Comment  "/>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_pendingcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:text="When will marriage happen? "/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Answer Language  "/>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/answer_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="English"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"/>
+
+
+    <TextView
+        android:id="@+id/report_creationtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_margin="4dp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        android:text="20 Sep 19, 11;25 AM"/>
+
+
+</LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
