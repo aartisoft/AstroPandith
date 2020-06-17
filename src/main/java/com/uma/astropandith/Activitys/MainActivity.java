@@ -473,21 +473,22 @@ public class MainActivity extends AppCompatActivity implements RestCallback {
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.FOREGROUND_SERVICE}, PackageManager.PERMISSION_GRANTED);
 
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.canDrawOverlays(this)) {
 
-       if (Settings.canDrawOverlays(this)) {
+                // startService(new Intent(MainActivity.this, ChatService.class));
 
-           // startService(new Intent(MainActivity.this, ChatService.class));
+             } else {
 
-        } else {
+                 RuntimePermissionForUser();
 
-            RuntimePermissionForUser();
+                 Toast.makeText(MainActivity.this, "System Alert Window Permission Is Required For Floating Widget.", Toast.LENGTH_LONG).show();
 
-            Toast.makeText(MainActivity.this, "System Alert Window Permission Is Required For Floating Widget.", Toast.LENGTH_LONG).show();
-
+             }
         }
 
 
-      //  Toast.makeText(mOneSignal, _pId, Toast.LENGTH_SHORT).show();
+        //  Toast.makeText(mOneSignal, _pId, Toast.LENGTH_SHORT).show();
 
         if(isServiceRunning()){
 
@@ -558,13 +559,23 @@ public class MainActivity extends AppCompatActivity implements RestCallback {
                 return true;
             }
         }
+
         return false;
+
     }
 
 
     private void ServiceCaller(Intent intent){
 
-        startService(intent);
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//
+//            startService(intent);
+//
+//        } else {
+
+            startService(intent);
+
+//        }
 
     }
 

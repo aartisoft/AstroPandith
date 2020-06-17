@@ -286,7 +286,6 @@ public class ChatFireBaseActivity extends AppCompatActivity implements RestCallb
 
                             Chat chat = doc.toObject( Chat.class);
 
-
                             if (chat.getChatid().equals(_chatId)) {
 
                                 if (chat.getReceiver().equals(_pid) && chat.getSender().equals(uid) ||
@@ -299,14 +298,10 @@ public class ChatFireBaseActivity extends AppCompatActivity implements RestCallb
 
                             messageAdapter = new MessageAdapter(ChatFireBaseActivity.this, mchat, _pid);
                             recyclerView.setAdapter(messageAdapter);
-
                         }
-
 
                     }
                 });
-
-
 
 
 //
